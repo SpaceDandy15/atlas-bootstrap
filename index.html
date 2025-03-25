@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Gunpla Hobby</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Header with Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Gunpla Collection</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#completed">Completed Builds</a></li>
+          <li class="nav-item"><a class="nav-link" href="#backlog">Backlog</a></li>
+          
+          <!-- Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#mastergrade">Master Grade</a>
+              <a class="dropdown-item" href="#realgrade">Real Grade</a>
+              <a class="dropdown-item" href="#highgrade">High Grade</a>
+              <a class="dropdown-item" href="#backlog">Backlog</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Single Carousel Section -->
+  <section id="carousel" class="container mt-5">
+    <h2 class="text-center mb-4">Gunpla Gallery</h2>
+    <div id="gunplaCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/unicorn.jpg" class="d-block w-100" alt="Unicorn Gundam">
+        </div>
+        <div class="carousel-item">
+          <img src="images/rx78.jpg" class="d-block w-100" alt="RX-78-2 Gundam Version 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/exia.jpg" class="d-block w-100" alt="Gundam Exia">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#gunplaCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#gunplaCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Multi-Image Carousel Section -->
+  <section id="multi-carousel" class="container mt-5">
+    <h2 class="text-center mb-4">Multi-Image Gunpla Carousel</h2>
+    <div id="multiGunplaCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="images/unicorn.jpg" class="d-block w-100" alt="Unicorn Gundam">
+            </div>
+            <div class="col-md-4">
+              <img src="images/rx78.jpg" class="d-block w-100" alt="RX-78-2 Gundam Version 3">
+            </div>
+            <div class="col-md-4">
+              <img src="images/exia.jpg" class="d-block w-100" alt="Gundam Exia">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="images/sazabi.jpg" class="d-block w-100" alt="Sazabi Gundam">
+            </div>
+            <div class="col-md-4">
+              <img src="images/wing.jpg" class="d-block w-100" alt="Wing Zero Gundam">
+            </div>
+            <div class="col-md-4">
+              <img src="images/barbatos.jpg" class="d-block w-100" alt="Barbatos Gundam">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#multiGunplaCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#multiGunplaCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Completed Builds Section -->
+  <section id="completed" class="container mt-5">
+    <h2 class="text-center mb-4">Completed Builds</h2>
+    <div class="row">
+      <!-- Master Grade Builds -->
+      <div class="col-md-4" id="mastergrade">
+        <h3>Master Grade</h3>
+        <ul>
+          <li>Unicorn Gundam</li>
+          <li>RX-78-2 Gundam Version 3</li>
+          <li>Zeta Gundam Ver. Ka</li>
+        </ul>
+      </div>
+
+      <!-- Real Grade Builds -->
+      <div class="col-md-4" id="realgrade">
+        <h3>Real Grade</h3>
+        <ul>
+          <li>Gundam Exia</li>
+          <li>Wing Zero TV Version</li>
+        </ul>
+      </div>
+
+      <!-- High Grade Builds -->
+      <div class="col-md-4" id="highgrade">
+        <h3>High Grade</h3>
+        <ul>
+          <li>Gundam Virtue</li>
+          <li>Strike Freedom</li>
+          <li>Immortal Justice</li>
+          <li>Barbatos Reborns</li>
+          <li>Sandrock TV Version</li>
+          <li>Shenlong Gundam TV Version</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Backlog Section -->
+  <section id="backlog" class="container mt-5">
+    <h2 class="text-center mb-4">My Backlog</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Upcoming Builds</h3>
+        <ul>
+          <li>Sazabi (Real Grade)</li>
+          <li>Gundam 00 Qan[T] (Master Grade)</li>
+          <li>Wing Gundam Zero EW (Master Grade)</li>
+          <li>Sinanju Stein (Master Grade)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Gallery</h2>
+      <div class="row">
+        <!-- Image of Completed Builds -->
+        <div class="col-md-4">
+          <img src="images/unicorn.jpg" class="img-fluid" alt="Unicorn Gundam">
+          <p>Unicorn Gundam</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/rx78.jpg" class="img-fluid" alt="RX-78-2 Gundam Version 3">
+          <p>RX-78-2 Gundam Version 3</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/exia.jpg" class="img-fluid" alt="Gundam Exia">
+          <p>Gundam Exia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Gunpla Hobby. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy2Rm5l/2Cp8FfXzNo5tubtP0VxX8U4dc5C5h7rj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybD9OZOdq5L4UshmDgaP1p1puI5zNldlhX7aV4ofR5Xz0TM6rD" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

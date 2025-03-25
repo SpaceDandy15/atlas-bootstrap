@@ -1,0 +1,14 @@
+/* Custom Font and Style */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar-brand {
+    font-family: 'Coiny', cursive;
+    font-size: 1.8rem;
+  }
+  
+  .nav-link {
+   
+  
