@@ -82,4 +82,4 @@ Google Fonts
 
 JQuery (For Bootstrap functionality)
 
-For More updates check here: spacedandy15.github.io/atlas-bootstrap/
+For More updates check here: https://spacedandy15.github.io/atlas-bootstrap/
