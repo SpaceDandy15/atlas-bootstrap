@@ -19,22 +19,22 @@
 
   <!-- Header with Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Gunpla Journey</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand text-danger" href="#">Gunpla Journey</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#completed">Completed Builds</a></li>
-          <li class="nav-item"><a class="nav-link" href="#backlog">Backlog</a></li>
-          <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist & Fun Facts</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#completed">Completed Builds</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#backlog">Backlog</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="wishlist.html">Wishlist & Fun Facts</a></li>
           
           <!-- Dropdown Menu -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,34 +62,85 @@
   </div>
 </section>
 
-  <!-- Single Carousel Section -->
-  <section id="carousel" class="container mt-5">
-    <h2 class="text-center mb-4">Gunpla Box Art</h2>
-    <div id="gunplaCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/unicorn.jpg" class="d-block w-100" alt="Unicorn Gundam">
-        </div>
-        <div class="carousel-item">
-          <img src="images/rx78.jpg" class="d-block w-100" alt="RX-78-2 Gundam Version 3">
-        </div>
-        <div class="carousel-item">
-          <img src="images/exia.jpg" class="d-block w-100" alt="Gundam Exia">
+<<!-- Single Carousel Section -->
+<section id="carousel" class="container mt-5 bg-dark text-danger">
+  <h2 class="text-center mb-4">Gunpla Box Art</h2>
+  <div id="gunplaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+      <!-- Carousel Item 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <img src="images/UnicornBA.jpg" class="img-fluid" alt="Unicorn Gundam" style="max-width: 300px;">
+          <div class="ms-md-4 mt-3 mt-md-0">
+            <h4>Unicorn Gundam</h4>
+            <p>Unicorn Gundam, piloted by Banagher Links, is a pivotal mobile suit in the Universal Century timeline.</p>
+          </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#gunplaCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#gunplaCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
+      <!-- Carousel Item 2 -->
+      <div class="carousel-item">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <img src="images/ZetaBA.jpg" class="img-fluid" alt="Zeta Gundam" style="max-width: 300px;">
+          <div class="ms-md-4 mt-3 mt-md-0">
+            <h4>Zeta Gundam</h4>
+            <p>Zeta Gundam is a transformable mobile suit designed for high-speed combat in the Gryps Conflict.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Item 3 -->
+      <div class="carousel-item">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <img src="images/ExiaBA.jpg" class="img-fluid" alt="Gundam Exia" style="max-width: 300px;">
+          <div class="ms-md-4 mt-3 mt-md-0">
+            <h4>Gundam Exia</h4>
+            <p>Exia, a key mobile suit from Gundam 00, is equipped for close-combat missions with its GN Sword.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Item 4 -->
+      <div class="carousel-item">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <img src="images/Wing0BA.jpg" class="img-fluid" alt="Wing Gundam Zero" style="max-width: 300px;">
+          <div class="ms-md-4 mt-3 mt-md-0">
+            <h4>Wing Gundam Zero</h4>
+            <p>Wing Gundam Zero, with its Twin Buster Rifle, is a legendary suit from the After Colony era.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Item 5 -->
+      <div class="carousel-item">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <img src="images/VirtueBA.jpg" class="img-fluid" alt="Gundam Virtue" style="max-width: 300px;">
+          <div class="ms-md-4 mt-3 mt-md-0">
+            <h4>Gundam Virtue</h4>
+            <p>Virtue specializes in heavy artillery, hiding the agile Nadleeh within its bulky armor. Also from Gundam 00.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+
+    <!-- Navigation Controls -->
+<button class="carousel-control-prev" type="button" data-bs-target="#gunplaCarousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#gunplaCarousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true""></span>
+</button>
+
+  </div>
+</section>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
   <!-- Multi-Image Carousel Section -->
-  <section id="multi-carousel" class="container mt-5">
+  <section id="multi-carousel" class="container mt-5 bg-dark text-danger">
     <h2 class="text-center mb-4">Multi-Image Gunpla Carousel</h2>
     <div id="multiGunplaCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -130,9 +181,8 @@
       </a>
     </div>
   </section>
-
   <!-- Completed Builds Section -->
-  <section id="completed" class="container mt-5">
+  <section id="completed" class="container mt-5 bg-dark text-danger">
     <h2 class="text-center mb-4">Completed Builds</h2>
     <div class="row">
       <!-- Master Grade Builds -->
@@ -144,7 +194,6 @@
           <li>Zeta Gundam Ver. Ka</li>
         </ul>
       </div>
-
       <!-- Real Grade Builds -->
       <div class="col-md-4" id="realgrade">
         <h3>Real Grade</h3>
@@ -153,7 +202,6 @@
           <li>Wing Zero TV Version</li>
         </ul>
       </div>
-
       <!-- High Grade Builds -->
       <div class="col-md-4" id="highgrade">
         <h3>High Grade</h3>
@@ -168,9 +216,8 @@
       </div>
     </div>
   </section>
-
   <!-- Backlog Section -->
-  <section id="backlog" class="container mt-5">
+  <section id="backlog" class="container mt-5 bg-dark text-danger">
     <h2 class="text-center mb-4">My Backlog</h2>
     <div class="row">
       <div class="col-md-12">
@@ -183,29 +230,27 @@
       </div>
     </div>
   </section>
-
   <!-- Gallery Section -->
-  <section id="gallery" class="py-5 text-center">
+  <section id="gallery" class="py-5 text-center bg-dark text-danger>
     <div class="container">
-      <h2 class="mb-4">Gallery</h2>
+      <h2 class="mb-4 text-danger">Gallery</h2>
       <div class="row">
         <!-- Image of Completed Builds -->
-        <div class="col-md-4">
-          <img src="images/unicorn.jpg" class="img-fluid" alt="Unicorn Gundam">
-          <p>Unicorn Gundam</p>
+        <div class="col-md-4 text-danger">
+          <img src="images/Boxart.jpg" class="img-fluid" alt="Unicorn Gundam">
+          <p>Completed Builds</p>
         </div>
-        <div class="col-md-4">
-          <img src="images/rx78.jpg" class="img-fluid" alt="RX-78-2 Gundam Version 3">
-          <p>RX-78-2 Gundam Version 3</p>
+        <div class="col-md-4 text-danger">
+          <img src="images/OG Gundam.jpg" class="img-fluid" alt="RX-78-2 Gundam Version 3">
+          <p>RX-78-2 Gundam Version 3.0 Favorite build so Far!</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 text-danger">
           <img src="images/exia.jpg" class="img-fluid" alt="Gundam Exia">
           <p>Gundam Exia</p>
         </div>
       </div>
     </div>
   </section>
-
   <!-- Footer Section -->
 <footer class="bg-light py-4">
   <div class="container text-center">
